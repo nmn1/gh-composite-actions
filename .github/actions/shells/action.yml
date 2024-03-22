@@ -11,5 +11,5 @@ runs:
   steps:
     - name: 'hello shell'  
       shell: bash
-      run: "Hello ${{inputs.greeting}}"  
+      run: echo "Hello ${{inputs.greeting}}"  
 

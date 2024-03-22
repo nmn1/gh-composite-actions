@@ -12,6 +12,8 @@ outputs:
 runs:
   using: composite
   steps:
+    - name: calling greeting actions
+      uses: ./../shells
     - name: Cache dependencies
       id: cache
       if: inputs.caching == 'true'

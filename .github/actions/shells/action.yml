@@ -1,0 +1,15 @@
+name: 'Get & cache dependencies.'
+description: 'Get the dependencies (by npm) and cache them.'
+inputs:
+  greeting:
+    description: 'Whether caching need to be used or not'
+    required: false
+    default: 'world'
+
+runs:
+  using: composite
+  steps:
+    - name: 'hello shell'  
+      shell: bash
+      run: "Hello ${{inputs.greeting}}"  
+

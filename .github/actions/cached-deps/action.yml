@@ -13,7 +13,7 @@ runs:
   using: composite
   steps:
     - name: calling greeting actions
-      uses: nmn1/gh-composite-actions/.github/actions/shells/action.yml
+      uses: nmn1/gh-composite-actions/.github/actions/shells/action.yml@main
     - name: Cache dependencies
       id: cache
       if: inputs.caching == 'true'

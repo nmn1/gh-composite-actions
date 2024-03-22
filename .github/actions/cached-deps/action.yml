@@ -17,7 +17,7 @@ runs:
       run: ls -al /home/runner/work/gh-composite-actions/gh-composite-actions/.github/actions/shells
       shell: bash
     - name: calling greeting actions
-      uses: ./actions/shells/action.yml
+      uses: nmn1/gh-composite-actions/.github/actions/action.yml
     - name: Cache dependencies
       id: cache
       if: inputs.caching == 'true'

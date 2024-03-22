@@ -14,7 +14,7 @@ runs:
   steps:
     - uses: actions/checkout@v3 
     - name: list
-      run: ls -al /home/runner/work/gh-composite-actions/gh-composite-actions/.github
+      run: ls -al /home/runner/work/gh-composite-actions/gh-composite-actions/.github/actions
       shell: bash
     - name: calling greeting actions
       uses: ./actions/shells/action.yml
